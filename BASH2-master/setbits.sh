@@ -18,32 +18,30 @@ while [ $counter -lt 4 ]
 do
 	if  (($var & 1))
 	then
-		 gpio write 0 1; #turn on led light 0 (bit 1)
-		 #echo var first if $var
+		 gpio write 0 1; #turn on 0--bit 1
+		
 	fi
 	
 	if (($var>>1 & 1))
 	then
-		#do something
-		 gpio write 1 1; #turn on led light 0 (bit 1)	
-		# echo var second if $var		 
+		
+		 gpio write 1 1; 	
+				 
 		
 	fi
 		 
 	if (($var>>2 & 1))
 	then
-		#do something	
-		 gpio write 2 1; #turn on led light 0 (bit 1)	
-	#	 echo var third if $var		 
+			
+		 gpio write 2 1;	 
 	fi
 		 
 	if (($var>>3 & 1))
 	then
-		#do something	
-		 gpio write 3 1; #turn on led light 0 (bit 1)	
-	#	 echo var fourth if $var		 
+			
+		 gpio write 3 1; 	 
 		
-	fi #close if statement
+	fi 
 	
 	(( counter++ ))
-done #close loop
+done 
