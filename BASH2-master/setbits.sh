@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Call the bits (or LED’s) from left to right bit1, bit2, bit3, bit4 and the number n. 
+#Call the bits (or LEDâ€™s) from left to right bit1, bit2, bit3, bit4 and the number n. 
 #Then
 # Bit1 is on iff (n)& 1
 # Bit2 is on iff (n>>1) & 1
@@ -8,8 +8,7 @@
 # Bit4 is on iff (n >> 3) & 1 
 
 
-# $1 is the argument passed by user (first argument)
-#only checks once wihtout a loop, so need a loop to keep it going
+# $1 first argument - by user
 #save input from argument in a variable
 
 var=$1
