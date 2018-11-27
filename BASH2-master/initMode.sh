@@ -27,5 +27,5 @@ do
 		#((COUNTER++)) # increment counter
 done
 
-#echo "All done"
-#echo "pins set to output and initalized to value 0 (off)"
+#echo "done"
+#echo "set to output and initalized to value 0 (off)"
