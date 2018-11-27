@@ -7,14 +7,14 @@
 #(pressed). The goal here is that this shell should wait until the button is
 #pressed and then released
 
-pinVal=$( gpio read 5 ); #here  we read the button and save the value
-pressed=1; #not pressed by default
+pinVal=$( gpio read 5 ); 
+pressed=1; 
 while true
 do
 		
-	if [ $pinVal -eq 1 ] ; #if pin is not pressed, wait until it is pressed,
+	if [ $pinVal -eq 1 ] ;#wait
 	then
-		until [ $pinVal -eq 0 ] #until the pin value changes, keep looping
+		until [ $pinVal -eq 0 ] #wait value change
 		do
 			echo $pinVal;
 			pressed=0
@@ -26,9 +26,9 @@ do
 	
 	pinVal=$( gpio read 5 )
 	
-	if [ $pinVal -eq 0 ] ; #if pin is  pressed, wait until it is not pressed,
+	if [ $pinVal -eq 0 ] ; 
 	then
-		until [ $pinVal -eq 1 ] #until the pin value changes, keep looping
+		until [ $pinVal -eq 1 ] 
 		do
 			echo $pinVal;
 			pressed=1
