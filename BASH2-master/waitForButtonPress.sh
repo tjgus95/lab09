@@ -1,11 +1,7 @@
 #!/bin/bash
 
 
-#Write a shell script that monitors the value of gpio
-#pin 5. It should busy wait (continually check and loop) as long as the pin
-#is 1 (not pressed). It should then busy wait as long as the pin is 0
-#(pressed). The goal here is that this shell should wait until the button is
-#pressed and then released
+
 
 pinVal=$( gpio read 5 ); 
 pressed=1; 
